@@ -1,0 +1,18 @@
+# For this to execute we have to insytll the stringr package
+
+
+# install("stringr")
+# library(stringr)
+
+
+
+dna_seq= "ATGGCTGCAT"
+
+seq_length= nchar(dna_seq)
+
+G_count <- str_count(dna_seq, 'G')
+C_count <- str_count(dna_seq, 'C')
+
+GC_count <- ((G_count + C_count)/seq_length) * 100
+
+print("GC count is: ", GC_count)
