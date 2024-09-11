@@ -4,7 +4,7 @@
 # install("stringr")
 # library(stringr)
 
-
+# normal calculation
 
 dna_seq= "ATGGCTGCAT"
 
@@ -16,3 +16,23 @@ C_count <- str_count(dna_seq, 'C')
 GC_count <- ((G_count + C_count)/seq_length) * 100
 
 print("GC count is: ", GC_count)
+
+
+
+# Using function
+
+
+GC_contentCalculator <- function(seq){
+    g_count <- str_count(seq, 'G')
+    c_count <- str_count(seq, 'C')
+    
+    seq_length= nchar(seq)
+    
+    gc_count= ((g_count + c_count)/seq_lenght)* 100
+    
+    print("GC count is: ", gc_count)
+}
+
+dna_seq= "ATTGCGCTAGC"
+
+GC_contentCalculator(dna_seq)
