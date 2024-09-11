@@ -1,1 +1,12 @@
+nucleotide <- "ATGCCATGC"
+
+for(base in nucleotide){
+    print(base)
+}
+
+nucleotide <- c("A","T","G","C","C","A","T","G","C")
+
+for(base in nucleotide){
+    print(base)
+}
 
