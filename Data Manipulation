@@ -1,0 +1,28 @@
+# data manipulation
+
+# import
+
+case_data= read.csv("https://github.com/vappiah/Machine-Learning-Tutorials/blob/main/datasets/malaria_clin_data.csv")
+
+# or
+
+source_data= "https://github.com/vappiah/Machine-Learning-Tutorials/blob/main/datasets/malaria_clin_data.csv"
+case_data= read.csv(source_data)
+
+
+#explore
+class(source_data)
+dim(source_data)  # to handle the dimentions in r
+colnames(source_data) # to display the column names in an array or an file
+
+#subset
+source_data[,'Clinical_Diagnosis'] # to fetch the all data into Clinical_Diagnosis
+uniquesource_data[,'Clinical_Diagnosis'] # fetch the unique data from the Clinical_Diagnosis
+
+
+# export
+
+write.csv(source_data, 'exported_data.csv') # this data is saved in your system.
+
+
+
